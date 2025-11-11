@@ -20,73 +20,115 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="bg-[#F5F3E7]/90 backdrop-blur-md shadow-md sticky top-0 z-50 border-b border-[#E5D9C7]">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        {/* ✅ Logo / Brand */}
-        <Link
-          href="/guru-newtown"
-          className="text-2xl font-bold text-[#2E7D32] hover:text-[#D35400] transition"
-        >
-          Guru’s Newtown
-        </Link>
+    <header className="sticky top-0 z-50">
+      {/* 🔸 Top Accent Strip */}
+      <div className="h-2 bg-gradient-to-r from-[#D35400] via-[#F4A261] to-[#2E7D32]" />
 
-        {/* ✅ Desktop Navigation */}
-        <nav className="hidden md:flex gap-6">
-          {navItems.map((item) => {
-            const isActive = pathname === item.href;
-            return (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={`text-[#3E2723] hover:text-[#D35400] transition ${
-                  isActive ? "font-semibold text-[#2E7D32]" : ""
-                }`}
-              >
-                {item.name}
-              </Link>
-            );
-          })}
-        </nav>
+      {/* 🔸 Main Header */}
+      <motion.div
+        initial={{ y: -40, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
+        className="bg-gradient-to-r from-[#F5F3E7] via-[#F7F5EB] to-[#F5F3E7]/95 backdrop-blur-md border-b border-[#E5D9C7] shadow-lg"
+      >
+        <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+          {/* ✅ Logo */}
+          <Link href="/guru-newtown" className="flex items-center gap-3">
+            <img
+              src="/logo/newtown-logo.png"
+              alt="Guru’s Newtown Logo"
+              className="h-14 w-auto object-contain drop-shadow-md hover:scale-105 transition-transform duration-300"
+            />
+          </Link>
 
-        {/* ✅ Mobile Menu Button */}
-        <button
-          className="md:hidden text-[#2E7D32] hover:text-[#D35400] transition"
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle menu"
-        >
-          {menuOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
-      </div>
+          {/* ✅ Desktop Nav */}
+          <nav className="hidden md:flex items-center gap-8">
+            {navItems.map((item) => {
+              const isActive = pathname === item.href;
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`relative font-medium text-[16px] tracking-wide transition-all duration-300 
+                    ${
+                      isActive
+                        ? "text-[#2E7D32]"
+                        : "text-[#3E2723] hover:text-[#D35400]"
+                    } group`}
+                >
+                  {item.name}
+                  {/* Animated underline */}
+                  <span
+                    className={`absolute left-0 -bottom-1 h-[2px] rounded-full bg-gradient-to-r from-[#D35400] to-[#2E7D32] transition-all duration-300 ${
+                      isActive ? "w-full" : "w-0 group-hover:w-full"
+                    }`}
+                  />
+                </Link>
+              );
+            })}
+          </nav>
 
-      {/* ✅ Mobile Dropdown Menu */}
+          {/* ✅ Right Button */}
+          <div className="hidden md:flex">
+            <Link
+              href="/guru-newtown/contact"
+              className="bg-gradient-to-r from-[#D35400] to-[#2E7D32] text-white px-5 py-2.5 rounded-full font-semibold shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105"
+            >
+              Reserve Now
+            </Link>
+          </div>
+
+          {/* ✅ Mobile Menu Toggle */}
+          <button
+            className="md:hidden text-[#2E7D32] hover:text-[#D35400] transition"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle menu"
+          >
+            {menuOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
+        </div>
+      </motion.div>
+
+      {/* ✅ Mobile Dropdown */}
       <AnimatePresence>
         {menuOpen && (
           <motion.nav
-            initial={{ opacity: 0, y: -20 }}
+            initial={{ opacity: 0, y: -15 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.3 }}
-            className="md:hidden bg-[#F5F3E7] border-t border-[#E5D9C7] shadow-md"
+            exit={{ opacity: 0, y: -15 }}
+            transition={{ duration: 0.25 }}
+            className="md:hidden bg-[#F5F3E7] border-t border-[#E5D9C7] shadow-lg"
           >
-            <ul className="flex flex-col items-center py-4 space-y-4">
+            <ul className="flex flex-col items-center py-5 space-y-5">
               {navItems.map((item) => {
                 const isActive = pathname === item.href;
                 return (
                   <li key={item.href}>
                     <Link
                       href={item.href}
-                      className={`block text-lg transition ${
+                      onClick={() => setMenuOpen(false)}
+                      className={`block text-lg font-medium transition ${
                         isActive
-                          ? "text-[#2E7D32] font-semibold"
+                          ? "text-[#2E7D32]"
                           : "text-[#3E2723] hover:text-[#D35400]"
                       }`}
-                      onClick={() => setMenuOpen(false)}
                     >
                       {item.name}
                     </Link>
                   </li>
                 );
               })}
+
+              {/* Mobile CTA */}
+              <li>
+                <Link
+                  href="/guru-newtown/contact"
+                  onClick={() => setMenuOpen(false)}
+                  className="inline-block bg-gradient-to-r from-[#D35400] to-[#2E7D32] text-white px-6 py-2 rounded-full font-semibold shadow-md hover:shadow-lg transition-all duration-300"
+                >
+                  Reserve Now
+                </Link>
+              </li>
             </ul>
           </motion.nav>
         )}

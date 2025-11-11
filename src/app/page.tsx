@@ -7,112 +7,105 @@ import "swiper/css";
 
 export default function HomeBanner() {
   return (
-    <section className="bg-[#f5f3e7]">
-      <div className="max-w-8xl mx-auto grid grid-cols-1 md:grid-cols-2">
-        
-        {/* LEFT: Guru's Newtown */}
+    <section className="bg-[#282727] py-8">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* LEFT: Guru’s Newtown */}
         <Link
           href="/guru-newtown"
-          className="group block relative  overflow-hidden shadow-lg"
+          className="group relative block overflow-hidden rounded-lg shadow-xl"
         >
           {/* Image Slider */}
           <Swiper
             spaceBetween={30}
             centeredSlides
             autoplay={{
-              delay: 2500,
+              delay: 3000,
               disableOnInteraction: false,
             }}
             modules={[Autoplay]}
-            className="h-[700px]"
+            className="h-[600px] md:h-[700px]"
           >
-            <SwiperSlide>
-              <img
-                src="/images/guru-image-7.jpg"
-                alt="Guru's Newtown Banner 1"
-                className="w-full h-[800px] object-cover"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src="/images/guru-image-2.png"
-                alt="Guru's Newtown Banner 2"
-                className="w-full h-[800px] object-cover"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src="/images/guru-image-4.jpg"
-                alt="Guru's Newtown Banner 3"
-                className="w-full h-[800px] object-cover"
-              />
-            </SwiperSlide>
+            {[
+              "/images/guru-image-7.jpg",
+              "/images/guru-image-2.png",
+              "/images/guru-image-4.jpg",
+            ].map((src, i) => (
+              <SwiperSlide key={i}>
+                <img
+                  src={src}
+                  alt={`Guru’s Newtown Banner ${i + 1}`}
+                  className="w-full h-full object-cover"
+                />
+              </SwiperSlide>
+            ))}
           </Swiper>
 
-          {/* Overlay tint */}
+          {/* Overlay */}
           <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition duration-500 z-10" />
 
-          {/* Text content ABOVE overlay */}
-          <div className="absolute  top-60 right-30 text-center text-white z-20">
-            <h2 className="text-6xl font-bold mb-2">Guru’s Newtown</h2>
-            <p className="text-[20px] max-w-md">
-              Experience authentic cuisine with a purpose — every meal supports rescued animals.
+          {/* Text Overlay */}
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-6 z-20">
+            <img
+              src="/logo/newtown-logo.png"
+              alt="Guru’s Newtown Logo"
+              className="w-2/3 max-w-[250px] mb-4"
+            />
+            <p className="text-lg md:text-xl max-w-md leading-relaxed">
+              Experience authentic cuisine with a purpose — every meal supports
+              rescued animals.
             </p>
-            <span className="inline-block mt-4 bg-[#D35400] text-white px-5 py-2 rounded-full font-semibold group-hover:bg-[#BF360C] transition">
+            <span className="inline-block mt-6 bg-[#D35400] text-white px-6 py-2.5 rounded-full font-semibold group-hover:bg-[#BF360C] transition">
               Visit Guru’s Newtown
             </span>
           </div>
         </Link>
 
-        {/* RIGHT: Guru’s Guardian Angels */}
+        {/* RIGHT: Guardian Angels */}
         <Link
           href="/guardian-angels"
-          className="group block relative overflow-hidden shadow-lg"
+          className="group relative block overflow-hidden rounded-lg shadow-xl"
         >
           {/* Image Slider */}
           <Swiper
             spaceBetween={30}
             centeredSlides
             autoplay={{
-              delay: 2500,
+              delay: 3000,
               disableOnInteraction: false,
             }}
             modules={[Autoplay]}
-            className="h-[700px]"
+            className="h-[600px] md:h-[700px]"
           >
-            <SwiperSlide>
-              <img
-                src="/guardian-images/dog-image-1.png"
-                alt="Guardian Angels Banner 1"
-                className="w-full h-[800px] object-cover"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src="/guardian-images/dog-image-2.jpg"
-                alt="Guardian Angels Banner 2"
-                className="w-full h-[800px] object-cover"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src="/guardian-images/dog-image-1.png"
-                alt="Guardian Angels Banner 3"
-                className="w-full h-[800px] object-cover"
-              />
-            </SwiperSlide>
+            {[
+              "/guardian-images/dog-image-1.png",
+              "/guardian-images/dog-image-2.jpg",
+              "/guardian-images/dog-image-1.png",
+            ].map((src, i) => (
+              <SwiperSlide key={i}>
+                <img
+                  src={src}
+                  alt={`Guardian Angels Banner ${i + 1}`}
+                  className="w-full h-full object-cover"
+                />
+              </SwiperSlide>
+            ))}
           </Swiper>
 
-          {/* Overlay tint */}
+          {/* Overlay */}
           <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition duration-500 z-10" />
 
-          {/* Text content ABOVE overlay */}
-          <div className="absolute top-60 right-30 text-center  text-white z-20">
-            <h2 className="text-5xl font-bold mb-2">Guru’s Guardian Angels</h2>
-            <p className="text-[20px] max-w-md">
-              Join our mission to rescue, rehabilitate, and care for stray animals in need.
+          {/* Text Overlay */}
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-6 z-20">
+            <img
+              src="/logo/guardian-logo.png"
+              alt="Guardian Angels Logo"
+              className="w-2/3 max-w-[250px] mb-4"
+            />
+            <p className="text-lg md:text-xl max-w-md leading-relaxed">
+              Join our mission to rescue, rehabilitate, and care for stray
+              animals in need.
             </p>
-            <span className="inline-block mt-4 bg-[#2E7D32] text-white px-5 py-2 rounded-full font-semibold group-hover:bg-[#1B5E20] transition">
+            <span className="inline-block mt-6 bg-[#2E7D32] text-white px-6 py-2.5 rounded-full font-semibold group-hover:bg-[#1B5E20] transition">
               Visit Guardian Angels
             </span>
           </div>
