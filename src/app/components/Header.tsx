@@ -38,7 +38,7 @@ export default function Header() {
             className="h-14 w-auto"
           />
           <div>
-            <h4 className="font-bold text-[#9cab3a]">Guru Foundation</h4>
+            <h4 className="font-bold text-[#9cab3a]">Guru's Foundation</h4>
             <p className="text-xs text-gray-500">Serving with compassion</p>
           </div>
         </Link>
@@ -119,7 +119,7 @@ export default function Header() {
                   transition={{ duration: 0.2 }}
                   className="absolute left-0 top-full mt-3 w-56 rounded-xl bg-white text-gray-700  shadow-lg border"
                 >
-                  <Link className="block px-4 py-3 hover:bg-[#f5f3e7]" href="/tiffin">
+                  <Link className="block px-4 py-3 hover:bg-[#f5f3e7]" href="/tiffins-meals">
                     Tiffin & Meals
                   </Link>
                   <Link className="block px-4 py-3 hover:bg-[#f5f3e7]" href="/catering">
@@ -133,13 +133,23 @@ export default function Header() {
           <Link href="/shop" className="text-gray-700 hover:text-[#db9c3d]">Shop</Link>
           <Link href="/contact" className="text-gray-700 hover:text-[#db9c3d]">Contact</Link>
 
-          {/* CTA */}
-          <Link
-            href="/donate"
-            className="ml-4 bg-[#db9c3d] text-white px-5 py-2 rounded-full hover:bg-[#c98c2f]"
-          >
-            Donate
-          </Link>
+          
+
+
+          {/* CTA BUTTON */}
+        <a
+          href="https://www.zeffy.com/en-US/donation-form/dce7d771-9492-4623-8508-d0e3096e1853"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          
+          <button className="group inline-flex items-centerml-4 bg-[#db9c3d] text-white px-5 py-2 rounded-full hover:bg-[#c98c2f]">
+            Donate 
+            <span className="group-hover:translate-x-1 transition-transform">
+              
+            </span>
+          </button>
+        </a>
         </nav>
 
         {/* MOBILE MENU BUTTON */}
@@ -153,64 +163,92 @@ export default function Header() {
       </div>
 
       {/* ================= MOBILE MENU ================= */}
-      <AnimatePresence>
-        {menuOpen && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            className="md:hidden bg-white border-t shadow-lg"
-          >
-            <div className="px-6 py-6 space-y-4 text-[#9cab3a] font-medium">
+     {/* ================= MOBILE MENU ================= */}
+<AnimatePresence>
+  {menuOpen && (
+    <motion.div
+      initial={{ height: 0, opacity: 0 }}
+      animate={{ height: "auto", opacity: 1 }}
+      exit={{ height: 0, opacity: 0 }}
+      className="md:hidden bg-white border-t shadow-lg overflow-hidden"
+    >
+      <div className="px-6 py-6 flex flex-col gap-4 text-[#9cab3a] font-medium">
 
-              <Link href="/" onClick={() => setMenuOpen(false)}>Home</Link>
-              <Link href="/about" onClick={() => setMenuOpen(false)}>About</Link>
+        {/* MAIN LINKS */}
+        <Link href="/" onClick={() => setMenuOpen(false)} className="py-2">
+          Home
+        </Link>
 
-              {/* MOBILE ADOPTION */}
-              <button
-                className="flex items-center justify-between w-full"
-                onClick={() => setAdoptionOpen(!adoptionOpen)}
-              >
-                Adoption
-                <ChevronDown className={`${adoptionOpen ? "rotate-180" : ""} transition`} />
-              </button>
+        <Link href="/about" onClick={() => setMenuOpen(false)} className="py-2">
+          About
+        </Link>
 
-              {adoptionOpen && (
-                <div className="pl-4 space-y-2 text-sm">
-                  <Link href="/virtual-adoption">Virtual Adoption</Link>
-                  <Link href="/animal-adoption">Animals Available</Link>
-                </div>
-              )}
+        {/* ADOPTION */}
+        <button
+          className="flex items-center justify-between py-2"
+          onClick={() => setAdoptionOpen(!adoptionOpen)}
+        >
+          Adoption
+          <ChevronDown
+            className={`transition-transform ${adoptionOpen ? "rotate-180" : ""}`}
+          />
+        </button>
 
-              {/* MOBILE SERVICES */}
-              <button
-                className="flex items-center justify-between w-full"
-                onClick={() => setServicesOpen(!servicesOpen)}
-              >
-                Services
-                <ChevronDown className={`${servicesOpen ? "rotate-180" : ""} transition`} />
-              </button>
-
-              {servicesOpen && (
-                <div className="pl-4 space-y-2 text-sm">
-                  <Link href="/tiffin">Tiffin & Meals</Link>
-                  <Link href="/catering">Catering</Link>
-                </div>
-              )}
-
-              <Link href="/shop">Shop</Link>
-              <Link href="/contact">Contact</Link>
-
-              <Link
-                href="/donate"
-                className="block text-center bg-[#db9c3d] text-white py-2 rounded-full"
-              >
-                Donate
-              </Link>
-            </div>
-          </motion.div>
+        {adoptionOpen && (
+          <div className="ml-4 flex flex-col gap-2 text-sm text-gray-700">
+            <Link href="/virtual-adoption" onClick={() => setMenuOpen(false)}>
+              Virtual Adoption
+            </Link>
+            <Link href="/animal-adoption" onClick={() => setMenuOpen(false)}>
+              Animals Available
+            </Link>
+          </div>
         )}
-      </AnimatePresence>
+
+        {/* SERVICES */}
+        <button
+          className="flex items-center justify-between py-2"
+          onClick={() => setServicesOpen(!servicesOpen)}
+        >
+          Services
+          <ChevronDown
+            className={`transition-transform ${servicesOpen ? "rotate-180" : ""}`}
+          />
+        </button>
+
+        {servicesOpen && (
+          <div className="ml-4 flex flex-col gap-2 text-sm text-gray-700">
+            <Link href="/tiffins-meals" onClick={() => setMenuOpen(false)}>
+              Tiffin & Meals
+            </Link>
+            <Link href="/catering" onClick={() => setMenuOpen(false)}>
+              Catering
+            </Link>
+          </div>
+        )}
+
+        <Link href="/shop" onClick={() => setMenuOpen(false)} className="py-2">
+          Shop
+        </Link>
+
+        <Link href="/contact" onClick={() => setMenuOpen(false)} className="py-2">
+          Contact
+        </Link>
+
+        {/* CTA */}
+        <a
+          href="https://www.zeffy.com/en-US/donation-form/dce7d771-9492-4623-8508-d0e3096e1853"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 text-center bg-[#db9c3d] text-white py-3 rounded-full font-semibold"
+        >
+          Donate
+        </a>
+      </div>
+    </motion.div>
+  )}
+</AnimatePresence>
+
     </header>
   );
 }

@@ -22,7 +22,7 @@ export default function ContactPage() {
           transition={{ duration: 0.8 }}
           className="max-w-3xl mx-auto"
         >
-          <h1 className="text-4xl md:text-5xl font-extrabold text-[#2E7D32] mb-4">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-[#9cab3a] mb-4">
             Get in Touch
           </h1>
           <p className="text-lg opacity-90">
@@ -85,7 +85,7 @@ export default function ContactPage() {
       {/* ================= VOLUNTEER FORM ================= */}
       <section className="bg-white py-20">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-[#2E7D32] text-center">
+          <h2 className="text-3xl font-bold text-[#9cab3a] text-center">
             Volunteer With Us
           </h2>
           <p className="text-center mt-3 opacity-80">
@@ -119,7 +119,7 @@ export default function ContactPage() {
 
       {/* ================= SANCTUARY GUIDELINES ================= */}
       <section className="py-20 max-w-5xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-[#2E7D32] mb-6 text-center">
+        <h2 className="text-3xl font-bold text-[#9cab3a] mb-6 text-center">
           Sanctuary Visit Guidelines
         </h2>
 

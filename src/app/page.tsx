@@ -11,14 +11,23 @@ import HomeActions from "./components/HomeActions";
 import VirtualAdoptionTeaser from "./components/VirtualAdoptionTeaser";
 import SanctuaryUpdates from "./components/SanctuaryUpdates";
 import HomeFinalCTA from "./components/HomeFinalCTA";
+import TiffinCTA from "./components/TiffinCTA";
+import CateringCTA from "./components/CateringCTA";
+import SeniorSupportCTA from "./components/SeniorSupportCTA";
+import DonateCTA from "./components/DonateCTA";
+import ShopCTA from "./components/ShopCTA";
 
 export default function HomeBanner() {
   return (
     <section className="">
      <HeroSection />
           <MissionStrip />
-
      <GuardianHomePage />
+     <TiffinCTA />
+<CateringCTA />
+<SeniorSupportCTA />
+<DonateCTA />
+<ShopCTA />
      <HomeActions />
      <VirtualAdoptionTeaser />
      <SanctuaryUpdates />

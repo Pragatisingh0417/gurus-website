@@ -5,7 +5,7 @@ export default function VirtualAdoptionTeaser() {
   return (
     <section className="bg-white py-20 px-6">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#2E7D32]">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#090909]">
           Adopt a Life With Your Heart
         </h2>
         <p className="text-gray-600 max-w-2xl mx-auto mb-12">
@@ -24,10 +24,10 @@ export default function VirtualAdoptionTeaser() {
     inline-flex items-center justify-center
     mt-12 px-8 py-4
     rounded-full
-    bg-[#2E7D32]
+    bg-[#9cab3a]
     text-white font-semibold text-lg
     shadow-lg
-    hover:bg-[#256428]
+    hover:bg-[#a8ba33]
     hover:scale-[1.03]
     transition-all duration-300
     focus:outline-none focus-visible:ring-4 focus-visible:ring-[#2E7D32]/40

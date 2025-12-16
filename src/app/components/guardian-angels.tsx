@@ -19,7 +19,7 @@ export default function GuardianHomePage() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="text-3xl sm:text-4xl font-bold text-[#2E7D32] mb-6"
+          className="text-3xl sm:text-4xl font-bold text-[#121212] mb-6"
         >
           A Commitment to Compassion
         </motion.h2>
@@ -105,14 +105,14 @@ export default function GuardianHomePage() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
         >
-          <h2 className="text-3xl font-bold text-[#2E7D32] mb-4">
+          <h2 className="text-3xl font-bold text-[#9cab3a] mb-4">
             A Safe, Creative & Caring Space
           </h2>
           <p className="text-lg mb-6 text-[#3E2723]/90">
             At Guru's Guardian Angels, our mission is to save and improve the lives of stray animals around the world by fostering unity, establishing shelters, and providing essential care. With so many countries facing the challenge of growing stray animal population, consisting of millions of cats and dogs, and only a fraction of them finding refuge in existing shelters, we are dedicated to making a difference.
           </p>
           <Link
-            href="/guru-newtown/about"
+            href="/about"
             className="inline-block bg-[#db9c3d] hover:bg-[#c78b2f] text-white px-6 py-3 rounded-full font-semibold transition"
           >
             Learn More About Us
