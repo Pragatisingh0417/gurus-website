@@ -33,7 +33,7 @@ export default function SeniorSupportPage() {
         {/* IMAGE */}
         <div className="relative rounded-3xl overflow-hidden shadow-2xl">
           <Image
-            src="/images/senior-care.jpg"
+            src="/images/Senior-Citizen-Support.jpg"
             alt="Senior citizen care and support"
             width={700}
             height={500}
