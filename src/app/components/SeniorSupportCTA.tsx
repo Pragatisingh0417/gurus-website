@@ -26,13 +26,13 @@ export default function SeniorSupportCTA() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-5">
-            <Link href="/senior-support">
+            <Link href="https://www.zeffy.com/en-US/donation-form/dce7d771-9492-4623-8508-d0e3096e1853" target="blank">
               <button className="bg-[#9cab3a] hover:bg-[#adbe3e] text-white font-semibold px-10 py-4 rounded-full transition shadow-lg">
                 Sponsor a Senior
               </button>
             </Link>
 
-            <Link href="/senior-support">
+            <Link href="/contact">
               <button className="border-2 border-[#d97706] text-[#d97706] hover:bg-[#d97706] hover:text-white font-semibold px-10 py-4 rounded-full transition">
                 Request Help
               </button>

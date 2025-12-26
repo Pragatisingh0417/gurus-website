@@ -16,6 +16,7 @@ import CateringCTA from "./components/CateringCTA";
 import SeniorSupportCTA from "./components/SeniorSupportCTA";
 import DonateCTA from "./components/DonateCTA";
 import ShopCTA from "./components/ShopCTA";
+import Gallery from "./components/Gallery";
 
 export default function HomeBanner() {
   return (
@@ -31,6 +32,7 @@ export default function HomeBanner() {
      <HomeActions />
      <VirtualAdoptionTeaser />
      <SanctuaryUpdates />
+     <Gallery />
      <HomeFinalCTA />
     </section>
   );

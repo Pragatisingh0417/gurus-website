@@ -9,7 +9,7 @@ export default function HomeFinalCTA() {
       <p className="mb-8 max-w-2xl mx-auto">
         Your monthly support gives animals food, medicine, shelter, and dignity.
       </p>
-      <Link href="/donate" className="btn-dark">
+      <Link href="https://www.zeffy.com/en-US/donation-form/dce7d771-9492-4623-8508-d0e3096e1853" className="btn-dark" target="blank">
         Start Helping Today
       </Link>
     </section>

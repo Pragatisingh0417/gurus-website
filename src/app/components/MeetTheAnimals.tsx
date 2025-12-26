@@ -17,7 +17,7 @@ const animals = [
     ],
     image: "/animals/cow.jpg",
     button: "Sponsor a Cow",
-    href: "/virtual-adoption/cow",
+    href: "/contact",
   },
   {
     id: "dog",
@@ -28,9 +28,9 @@ const animals = [
       "Orphaned puppies",
       "Senior dogs needing lifelong care",
     ],
-    image: "/animals/dog.jpg",
+    image: "/images/309A7171.JPG",
     button: "Sponsor a Dog",
-    href: "/virtual-adoption/dog",
+    href: "/contact",
   },
   {
     id: "cat",
@@ -42,7 +42,7 @@ const animals = [
     ],
     image: "/animals/cat.jpg",
     button: "Sponsor a Cat",
-    href: "/virtual-adoption/cat",
+    href: "/contact",
   },
 ];
 

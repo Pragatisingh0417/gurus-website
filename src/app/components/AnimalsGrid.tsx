@@ -13,7 +13,7 @@ export default function AnimalsGrid() {
             name="Bruno"
             age="3 months"
             description="Playful, vaccinated, and looking for a loving home."
-            image="/animals/puppy-1.jpg"
+            image="/images/309A7165.JPG"
           />
         </div>
       </div>

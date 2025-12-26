@@ -131,7 +131,7 @@ export default function AboutPage() {
         Your compassion can change an animal’s future today.
       </p>
       <Link
-        href="/donate"
+        href="https://www.zeffy.com/en-US/donation-form/dce7d771-9492-4623-8508-d0e3096e1853" target="blank"
         className="bg-[#db9c3d] px-8 py-3 rounded-full font-semibold"
       >
         Donate Now

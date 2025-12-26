@@ -21,7 +21,7 @@ export default function HomeActions() {
 
           {/* Donate */}
           <Link
-            href="/donate"
+            href="https://www.zeffy.com/en-US/donation-form/dce7d771-9492-4623-8508-d0e3096e1853" target="blank"
             className="group bg-white rounded-2xl p-6 text-center shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1"
           >
             <Heart className="mx-auto mb-4 text-red-500 w-10 h-10 group-hover:scale-110 transition" />
@@ -47,7 +47,7 @@ export default function HomeActions() {
 
           {/* Tiffin */}
           <Link
-            href="/tiffin"
+            href="/tiffins-meals"
             className="group bg-white rounded-2xl p-6 text-center shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1"
           >
             <Utensils className="mx-auto mb-4 text-[#db9c3d] w-10 h-10 group-hover:scale-110 transition" />

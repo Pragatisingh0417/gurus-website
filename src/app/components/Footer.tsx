@@ -19,7 +19,7 @@ export default function Footer() {
           </p>
 
           <Link
-            href="/donate"
+            href="https://www.zeffy.com/en-US/donation-form/dce7d771-9492-4623-8508-d0e3096e1853" target="blank"
             className="inline-flex items-center gap-2 bg-[#db9c3d] text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-[#c98c2f] transition"
           >
             <Heart size={16} />
