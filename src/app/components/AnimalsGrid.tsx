@@ -8,42 +8,53 @@ export default function AnimalsGrid() {
       {/* Puppies */}
       <div>
         <h2 className="section-title">🐶 Puppies</h2>
-        <div className="grid md:grid-cols-3 gap-8 mt-8">
-          <AnimalCard
-            name="Bruno"
-            age="3 months"
-            description="Playful, vaccinated, and looking for a loving home."
-            image="/images/309A7165.JPG"
-          />
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-8">
+          <AnimalCard image="/images/309A7140.JPG" />
+          <AnimalCard image="/images/309A7091.JPG" />
+          <AnimalCard image="/images/309A7094.JPG" />
+                    <AnimalCard image="/images/309A7150.JPG" />
+
+          <AnimalCard image="/images/309A7108.JPG" />
+
+          <AnimalCard image="/images/309A7137.JPG" />
+
+          <AnimalCard image="/images/309A7165.JPG" />
+
         </div>
       </div>
 
       {/* Kittens */}
       <div>
         <h2 className="section-title">🐱 Kittens</h2>
-        <div className="grid md:grid-cols-3 gap-8 mt-8">
-          <AnimalCard
-            name="Misty"
-            age="2 months"
-            description="Rescued orphan, gentle and affectionate."
-            image="/animals/kitten-1.jpg"
-          />
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-8">
+          <AnimalCard image="/images/kitten-1.jpeg" />
+                    <AnimalCard image="/images/kitten-2.jpg" />
+                              <AnimalCard image="/images/kitten-3.jpeg" />
+
+
         </div>
       </div>
 
       {/* Special Needs */}
       <div>
-        <h2 className="section-title">❤️ Special Needs Animals</h2>
+        <h2 className="section-title">❤️ Cows</h2>
         <p className="text-[#3E2723]/80 max-w-2xl">
           These animals may need extra care, but they give extra love.
         </p>
-        <div className="grid md:grid-cols-3 gap-8 mt-8">
-          <AnimalCard
-            name="Lucky"
-            age="4 years"
-            description="Paralyzed back legs, cheerful spirit."
-            image="/animals/special-1.jpg"
-          />
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-8">
+          <AnimalCard image="/images/cow-1.jpeg" />
+                    <AnimalCard image="/images/cow-2.jpeg" />
+
+          <AnimalCard image="/images/cow-3.jpeg" />
+                    <AnimalCard image="/images/cow-4.jpeg" />
+
+          <AnimalCard image="/images/cow-5.jpeg" />
+
+          <AnimalCard image="/images/cow-6.jpeg" />
+                    <AnimalCard image="/images/cow-8.jpeg" />
+
+
+
         </div>
       </div>
 

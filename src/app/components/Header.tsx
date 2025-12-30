@@ -130,7 +130,7 @@ export default function Header() {
             </AnimatePresence>
           </div>
 
-          <Link href="/shop" className="text-gray-700 hover:text-[#db9c3d]">Shop</Link>
+          <Link href="https://gurus-guardian-angel.printify.me/" target="blank" className="text-gray-700 hover:text-[#db9c3d]">Shop</Link>
           <Link href="/contact" className="text-gray-700 hover:text-[#db9c3d]">Contact</Link>
 
           
@@ -227,7 +227,7 @@ export default function Header() {
           </div>
         )}
 
-        <Link href="/shop" onClick={() => setMenuOpen(false)} className="py-2">
+        <Link href="https://gurus-guardian-angel.printify.me/" target="blank" onClick={() => setMenuOpen(false)} className="py-2">
           Shop
         </Link>
 

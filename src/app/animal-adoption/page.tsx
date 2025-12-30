@@ -25,7 +25,6 @@ export default function AniamlAdoption() {
           safety, and a forever family.
         </p>
       </motion.div>
-      
       <AnimalsGrid />
       <AdoptionGuidelines />
       <AdoptionForm />

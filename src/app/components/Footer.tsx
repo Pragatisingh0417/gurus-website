@@ -90,7 +90,7 @@ export default function Footer() {
       <div className="border-t border-[#9cab3a]/20 bg-[#f0eddc]">
         <div className="max-w-7xl mx-auto px-6 py-6 text-center text-xs text-[#3E2723]/70 space-y-2">
           <p>
-            © {new Date().getFullYear()} Guru Foundation. All rights reserved.
+            © {new Date().getFullYear()} Gem Web Services. All rights reserved.
           </p>
           <p>
             Registered Non-Profit Organization • Donations may be tax-deductible

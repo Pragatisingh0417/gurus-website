@@ -15,7 +15,6 @@ export default function VirtualAdoption() {
      <MeetTheAnimals />
      <SponsorshipTiers />
      <DonationImpact />
-     <LatestRescues />
     </section>
   );
 }
