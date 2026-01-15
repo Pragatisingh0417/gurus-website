@@ -20,7 +20,7 @@ export default function DonateCTA() {
 
         <p className="max-w-3xl mx-auto text-lg text-gray-300 mb-10">
           Every contribution directly supports animal rescues,
-          senior citizen care, medical treatment, food programs,
+          medical treatment, food programs,
           and emergency response.
         </p>
 

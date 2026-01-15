@@ -1,11 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { Facebook, Instagram, Twitter, Mail, Heart } from "lucide-react";
+import { Facebook, Instagram, Youtube, Mail, Heart } from "lucide-react";
 
 export default function Footer() {
   return (
     <footer className="bg-[#f5f3e7] text-[#3E2723] border-t border-[#9cab3a]/30">
+      
+      {/* MAIN FOOTER CONTENT */}
       <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-3 gap-10">
 
         {/* MINI MISSION */}
@@ -19,7 +21,8 @@ export default function Footer() {
           </p>
 
           <Link
-            href="https://www.zeffy.com/en-US/donation-form/dce7d771-9492-4623-8508-d0e3096e1853" target="blank"
+            href="https://www.zeffy.com/en-US/donation-form/dce7d771-9492-4623-8508-d0e3096e1853"
+            target="_blank"
             className="inline-flex items-center gap-2 bg-[#db9c3d] text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-[#c98c2f] transition"
           >
             <Heart size={16} />
@@ -35,8 +38,7 @@ export default function Footer() {
           <ul className="space-y-2 text-sm">
             <li><Link href="/about" className="hover:text-[#db9c3d]">About Us</Link></li>
             <li><Link href="/animal-adoption" className="hover:text-[#db9c3d]">Virtual Adoption</Link></li>
-                        <li><Link href="/virtual-adoption" className="hover:text-[#db9c3d]">Animal Adoption</Link></li>
-
+            <li><Link href="/virtual-adoption" className="hover:text-[#db9c3d]">Animal Adoption</Link></li>
             <li><Link href="/tiffin" className="hover:text-[#db9c3d]">Tiffin & Meals</Link></li>
             <li><Link href="/shop" className="hover:text-[#db9c3d]">Shop</Link></li>
             <li><Link href="/contact" className="hover:text-[#db9c3d]">Contact</Link></li>
@@ -51,28 +53,35 @@ export default function Footer() {
 
           <div className="flex items-center gap-4 mb-4">
             <a
-              href="#"
+              href="https://www.facebook.com/people/GGA-for-strays/100092372754067/"
+              target="_blank"
               aria-label="Facebook"
               className="p-2 rounded-full bg-white shadow hover:text-[#db9c3d] transition"
             >
               <Facebook size={18} />
             </a>
+
             <a
-              href="#"
+              href="https://www.instagram.com/gurus_guardian_angels/"
+              target="_blank"
               aria-label="Instagram"
               className="p-2 rounded-full bg-white shadow hover:text-[#db9c3d] transition"
             >
               <Instagram size={18} />
             </a>
+
             <a
-              href="#"
-              aria-label="Twitter"
+              href="http://youtube.com/@growingwithgurus9700"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
               className="p-2 rounded-full bg-white shadow hover:text-[#db9c3d] transition"
             >
-              <Twitter size={18} />
+              <Youtube size={18} />
             </a>
+
             <a
-              href="mailto:info@gurufoundation.org"
+              href="mailto:pt604137@gmail.com"
               aria-label="Email"
               className="p-2 rounded-full bg-white shadow hover:text-[#db9c3d] transition"
             >
@@ -86,18 +95,40 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* DISCLAIMER BAR */}
-      <div className="border-t border-[#9cab3a]/20 bg-[#f0eddc]">
-        <div className="max-w-7xl mx-auto px-6 py-6 text-center text-xs text-[#3E2723]/70 space-y-2">
-          <p>
-            © {new Date().getFullYear()} Gem Web Services. All rights reserved.
-          </p>
-          <p>
-            Registered Non-Profit Organization • Donations may be tax-deductible
-            as per applicable laws.
-          </p>
-        </div>
+      {/* CANDID SEAL */}
+      <div className="flex justify-center py-6 border-t border-[#9cab3a]/20">
+        <a
+          href="https://app.candid.org/profile/14976493/gurus-guardian-angels-92-3775848/?pkId=d2f782e7-ebf2-4a6a-993f-a658bfd332db"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Candid Seal of Transparency"
+        >
+          <img
+            src="/images/gold.jpg"
+            alt="Candid Seal of Transparency"
+            className="h-14 w-auto"
+          />
+        </a>
       </div>
+
+      {/* DISCLAIMER BAR */}
+      <div className="bg-[#9cab3a] border-t border-white/20 py-6 flex flex-col sm:flex-row items-center justify-center gap-2 text-sm text-white/80">
+        <span>
+          Copyright © {new Date().getFullYear()} All rights reserved. Developed with
+        </span>
+
+        <span className="text-red-500">❤️</span>
+
+        <a
+          href="https://gemwebservices.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 font-semibold text-white hover:text-red-500 transition"
+        >
+          <img src="/images/gem-logo.webp" alt="Gem Web Services" className="h-5 w-auto" />
+        </a>
+      </div>
+
     </footer>
   );
 }

@@ -31,8 +31,7 @@ export default function CateringCTA() {
           </h2>
 
           <p className="text-lg text-gray-700 mb-8">
-            Celebrate your moments while supporting animals, seniors,
-            and community care.
+            Celebrate your moments while supporting animals, and community care.
           </p>
 
           <Link href="/catering">

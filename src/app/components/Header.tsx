@@ -96,9 +96,9 @@ export default function Header() {
             </AnimatePresence>
           </div>
 
-          <Link href="/senior-support" className="text-gray-700 hover:text-[#db9c3d]">
+          {/* <Link href="/senior-support" className="text-gray-700 hover:text-[#db9c3d]">
             Senior Citizen Support
-          </Link>
+          </Link> */}
 
           {/* SERVICES DROPDOWN */}
           <div
@@ -120,7 +120,7 @@ export default function Header() {
                   className="absolute left-0 top-full mt-3 w-56 rounded-xl bg-white text-gray-700  shadow-lg border"
                 >
                   <Link className="block px-4 py-3 hover:bg-[#f5f3e7]" href="/tiffins-meals">
-                    Tiffin & Meals
+                    Tiffins & Meals
                   </Link>
                   <Link className="block px-4 py-3 hover:bg-[#f5f3e7]" href="/catering">
                     Catering

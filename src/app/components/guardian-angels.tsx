@@ -120,33 +120,7 @@ export default function GuardianHomePage() {
         </motion.div>
       </section>
 
-      {/* 🍽️ MENU – CLICKABLE LIGHTBOX */}
-      <section className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-10">
-        {[
-          { title: "Guru’s Veg/an Menu", img: "/images/vegan-menu.png" },
-          { title: "Guru’s Full Menu", img: "/images/full-menu.jpg" },
-        ].map((menu, i) => (
-          <motion.div
-            key={i}
-            whileHover={{ scale: 1.03 }}
-            className="cursor-pointer"
-            onClick={() => setLightbox(menu.img)}
-          >
-            <h3 className="text-2xl font-bold text-[#2E7D32] mb-4 text-center">
-              {menu.title}
-            </h3>
-            <Image
-              src={menu.img}
-              alt={menu.title}
-              width={600}
-              height={420}
-              placeholder="blur"
-              blurDataURL="/images/blur.jpg"
-              className="rounded-2xl shadow-lg"
-            />
-          </motion.div>
-        ))}
-      </section>
+      
 
       {/* 🔍 LIGHTBOX */}
       {lightbox && (

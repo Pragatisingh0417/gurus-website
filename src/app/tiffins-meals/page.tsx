@@ -10,7 +10,7 @@ export default function TiffinsMealsPage() {
           Tiffins & Healing Meals
         </h1>
         <p className="max-w-3xl mx-auto text-lg text-gray-700">
-          Fresh, home-cooked vegetarian meals prepared with love —  
+          Fresh, home-cooked vegan meals prepared with love —  
           nourishing people while supporting animals in need.
         </p>
       </section>
@@ -76,7 +76,6 @@ export default function TiffinsMealsPage() {
             <li>Buys medicines</li>
             <li>Supports emergency rescues</li>
             <li>Helps raise orphaned puppies</li>
-            <li>Feeds senior citizens in need</li>
           </ul>
 
           <p className="mt-6 font-medium">

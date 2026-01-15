@@ -7,7 +7,7 @@ export default function AnimalsGrid() {
 
       {/* Puppies */}
       <div>
-        <h2 className="section-title">🐶 Puppies</h2>
+        <h2 className="section-title">🐶 Dogs and  Puppies</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-8">
           <AnimalCard image="/images/309A7140.JPG" />
           <AnimalCard image="/images/309A7091.JPG" />
@@ -25,7 +25,7 @@ export default function AnimalsGrid() {
 
       {/* Kittens */}
       <div>
-        <h2 className="section-title">🐱 Kittens</h2>
+        <h2 className="section-title">🐱 Cats and kittens</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-8">
           <AnimalCard image="/images/kitten-1.jpeg" />
                     <AnimalCard image="/images/kitten-2.jpg" />
@@ -38,7 +38,7 @@ export default function AnimalsGrid() {
       {/* Special Needs */}
       <div>
         <h2 className="section-title">❤️ Cows</h2>
-        <p className="text-[#3E2723]/80 max-w-2xl">
+        <p className="text-[#3E2723]/80 text-center mt-5 font-bold">
           These animals may need extra care, but they give extra love.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-8">

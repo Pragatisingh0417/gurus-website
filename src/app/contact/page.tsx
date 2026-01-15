@@ -43,10 +43,10 @@ export default function ContactPage() {
             For general queries & partnerships
           </p>
           <a
-            href="mailto:info@guruguardianangels.org"
+            href="mailto:pt604137@gmail.com"
             className="inline-block mt-4 text-[#db9c3d] font-medium"
           >
-            info@guruguardianangels.org
+            pt604137@gmail.com
           </a>
         </div>
 
@@ -57,13 +57,15 @@ export default function ContactPage() {
           <p className="text-sm opacity-80 mt-2">
             Quick support & urgent help
           </p>
-          <a
-            href="https://wa.me/919999999999"
-            target="_blank"
-            className="inline-block mt-4 text-[#db9c3d] font-medium"
-          >
-            Chat on WhatsApp
-          </a>
+         <a
+  href="https://wa.me/12159685700"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block mt-4 text-[#db9c3d] font-medium"
+>
+  Chat on WhatsApp
+</a>
+
         </div>
 
         {/* SOCIAL */}
@@ -72,10 +74,10 @@ export default function ContactPage() {
           <h3 className="mt-4 font-semibold text-lg">Follow Our Journey</h3>
 
           <div className="flex justify-center gap-5 mt-5">
-            <a href="#" aria-label="Instagram">
+            <a href="https://www.instagram.com/gurus_guardian_angels/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" aria-label="Instagram">
               <Instagram className="hover:text-[#db9c3d]" />
             </a>
-            <a href="#" aria-label="YouTube">
+            <a href="https://www.youtube.com/@growingwithgurus9700" aria-label="YouTube">
               <Youtube className="hover:text-[#db9c3d]" />
             </a>
           </div>

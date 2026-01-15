@@ -38,7 +38,6 @@ export default function TiffinCTA() {
               "Medical treatments",
               "Sanctuary operations",
               "Puppy care & food",
-              "Senior citizen meals",
             ].map((item, i) => (
               <li key={i} className="flex items-start gap-3 text-gray-700">
                 <span className="mt-2 w-2 h-2 rounded-full bg-[#d97706]" />

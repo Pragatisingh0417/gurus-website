@@ -12,8 +12,6 @@ const animals = [
       "Elderly mothers",
       "Accident survivors",
       "Blind & paralyzed cows",
-      "Babies rescued from roads",
-      "Abandoned after giving birth",
     ],
     image: "/images/cow-1.jpeg",
     button: "Sponsor a Cow",
@@ -26,7 +24,6 @@ const animals = [
       "Paralyzed dogs",
       "Hit-and-run victims",
       "Orphaned puppies",
-      "Senior dogs needing lifelong care",
     ],
     image: "/images/309A7171.JPG",
     button: "Sponsor a Dog",
@@ -40,8 +37,21 @@ const animals = [
       "Orphaned kittens",
       "Critical medical cases",
     ],
-    image: "/images/Kitten-2.jpg",
+    image: "/images/kitten-2.jpg",
     button: "Sponsor a Cat",
+    href: "/contact",
+  },
+
+  {
+    id: "goat",
+    title: "Goats",
+    description: [
+      "Accident rescues",
+      "Orphaned goats",
+      "Critical medical cases",
+    ],
+    image: "/images/goat-image.jpg",
+    button: "Sponsor a Goat",
     href: "/contact",
   },
 ];
@@ -68,7 +78,7 @@ export default function MeetTheAnimals() {
         </motion.div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {animals.map((animal, index) => (
             <motion.div
               key={animal.id}

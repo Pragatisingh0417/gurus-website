@@ -18,7 +18,7 @@ export default function CateringPage() {
           </h1>
           <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
             Purpose-driven catering for intimate events —  
-            where every meal supports animals and people in need.
+            where every meal supports animals in need.
           </p>
         </div>
       </section>
@@ -78,7 +78,7 @@ export default function CateringPage() {
             "Fresh Indian curries",
             "Rice",
             "Appetizers",
-            "Vegan & gluten-free options",
+            "gluten-free and special diet options",
             "Homemade drinks (coming soon)",
           ].map((item, i) => (
             <div
@@ -107,7 +107,6 @@ export default function CateringPage() {
                 "Animal rescues",
                 "Sanctuary care",
                 "Puppy rehabilitation",
-                "Senior citizen meals",
               ].map((item, i) => (
                 <li key={i} className="flex items-center gap-4">
                   <span className="w-3 h-3 bg-[#d97706] rounded-full" />

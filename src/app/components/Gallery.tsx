@@ -19,18 +19,18 @@ type GalleryImage = {
 
 const images: GalleryImage[] = [
   { id: 1, src: "/images/309A7090.JPG", alt: "Gallery Image 1" },
-  { id: 2, src: "/images/309A7091.JPG", alt: "Gallery Image 2" },
-  { id: 3, src: "/images/309A7098.JPG", alt: "Gallery Image 3" },
+  { id: 2, src: "/images/kitten-2.jpg", alt: "Gallery Image 2" },
+  { id: 3, src: "/images/cow-1.jpeg", alt: "Gallery Image 3" },
   { id: 4, src: "/images/309A7094.JPG", alt: "Gallery Image 4" },
-  { id: 5, src: "/images/309A7102.JPG", alt: "Gallery Image 5" },
+  { id: 5, src: "/images/kitten-3.jpeg", alt: "Gallery Image 5" },
   { id: 6, src: "/images/309A7108.JPG", alt: "Gallery Image 6" },
-    { id: 7, src: "/images/309A7110.JPG", alt: "Gallery Image 6" },
+    { id: 7, src: "/images/cow-1.jpeg", alt: "Gallery Image 7" },
 
-      { id: 8, src: "/images/309A7117.JPG", alt: "Gallery Image 6" },
+      { id: 8, src: "/images/309A7117.JPG", alt: "Gallery Image 8" },
 
-        { id: 9, src: "/images/309A7121.JPG", alt: "Gallery Image 6" },
+        { id: 9, src: "/images/309A7121.JPG", alt: "Gallery Image 9" },
 
-          { id: 10, src: "/images/309A7124.JPG", alt: "Gallery Image 6" },
+          { id: 10, src: "/images/309A7124.JPG", alt: "Gallery Image 10" },
 
 ];
 

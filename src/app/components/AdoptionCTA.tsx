@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function AdoptionCTA() {
   return (
-    <section className="bg-[#2E7D32] text-white text-center py-20">
+    <section className="bg-[#000000] text-white text-center py-20">
       <h2 className="text-3xl md:text-4xl font-bold mb-4">
         Ready to Change a Life?
       </h2>

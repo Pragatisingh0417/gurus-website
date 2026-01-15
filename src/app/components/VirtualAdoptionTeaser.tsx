@@ -1,5 +1,7 @@
 import Link from "next/link";
-import { FaDog, FaCat} from "react-icons/fa";
+import { FaDog, FaCat, } from "react-icons/fa";
+import { GiGoat } from "react-icons/gi";
+
 
 export default function VirtualAdoptionTeaser() {
   return (
@@ -12,10 +14,12 @@ export default function VirtualAdoptionTeaser() {
           Support animals who cannot be adopted into homes — but depend on humans for survival.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-4 gap-8">
           <AdoptionCard icon={<FaDog />} title="Sponsor a Cow" />
           <AdoptionCard icon={<FaDog />} title="Sponsor a Dog" />
           <AdoptionCard icon={<FaCat />} title="Sponsor a Cat" />
+                    <AdoptionCard icon={<GiGoat />} title="Sponsor a Goat" />
+
         </div>
 
        <Link
