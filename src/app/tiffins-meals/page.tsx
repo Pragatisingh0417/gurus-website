@@ -1,5 +1,8 @@
 "use client";
 
+import TiffinRequestForm from "../components/TiffinRequestForm";
+import VolunteerForm from "../components/VolunteerForm";
+
 export default function TiffinsMealsPage() {
   return (
     <main className="bg-[#fafaf7] text-[#2b2b2b]">
@@ -86,38 +89,9 @@ export default function TiffinsMealsPage() {
       </section>
 
       {/* ---------------- TIFFIN REQUEST FORM ---------------- */}
-      <section className="max-w-4xl mx-auto px-6 py-20">
-        <h2 className="text-3xl font-semibold text-center mb-10">
-          Request Tiffin or Meals
-        </h2>
+    
 
-        <form className="grid gap-6 bg-white p-8 rounded-xl shadow-md">
-          <input className="input" placeholder="Full Name" />
-          <input className="input" placeholder="Phone Number" />
-
-          <select className="input">
-            <option>Pickup or Delivery</option>
-            <option>Pickup</option>
-            <option>Delivery</option>
-          </select>
-
-          <input className="input" placeholder="Quantity" />
-
-          <input
-            className="input"
-            placeholder="Dietary Needs (e.g. low salt, no onion)"
-          />
-
-          <textarea
-            className="input h-28"
-            placeholder="Notes"
-          />
-
-          <button className="bg-[#d97706] hover:bg-[#b45309] text-white font-semibold py-3 rounded-full transition">
-            Request Tiffin
-          </button>
-        </form>
-      </section>
+        <TiffinRequestForm />
 
       {/* ---------------- TAGLINE ---------------- */}
       <section className="bg-[#2b2b2b] text-white py-12 text-center px-6">

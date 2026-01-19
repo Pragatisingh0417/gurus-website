@@ -13,7 +13,7 @@ const steps = [
   {
     icon: <FaHeart />,
     title: "Choose an Animal",
-    desc: "Select a cow, dog, goat or cat who needs long-term care and support.",
+    desc: "Select a cow, dog, horses or cat who needs long-term care and support.",
   },
   {
     icon: <FaHandsHelping />,

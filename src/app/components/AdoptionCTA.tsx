@@ -10,7 +10,7 @@ export default function AdoptionCTA() {
       <p className="max-w-xl mx-auto mb-8 opacity-90">
         Adoption saves lives. Start your journey today.
       </p>
-      <Link href="/contact" className="btn-secondary">
+      <Link href="/contact" className="btn-primary mx-auto px-12 disabled:opacity-50 rounded-2xl border-2 ">
         Contact Us
       </Link>
     </section>

@@ -9,6 +9,7 @@ import {
   Youtube,
   HeartHandshake,
 } from "lucide-react";
+import VolunteerForm from "../components/VolunteerForm";
 
 export default function ContactPage() {
   return (
@@ -94,28 +95,7 @@ export default function ContactPage() {
             Your time and compassion can save lives.
           </p>
 
-          <form className="mt-10 grid gap-6">
-            <input
-              className="border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#9cab3a]"
-              placeholder="Full Name"
-            />
-            <input
-              className="border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#9cab3a]"
-              placeholder="Email Address"
-            />
-            <input
-              className="border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#9cab3a]"
-              placeholder="Phone Number"
-            />
-            <textarea
-              className="border rounded-xl px-4 py-3 h-32 focus:outline-none focus:ring-2 focus:ring-[#9cab3a]"
-              placeholder="How would you like to help?"
-            />
-
-            <button className="btn-primary mx-auto px-12">
-              Submit
-            </button>
-          </form>
+          <VolunteerForm />
         </div>
       </section>
 

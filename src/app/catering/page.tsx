@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import CateringRequestForm from "../components/CateringRequestForm";
 
 export default function CateringPage() {
   return (
@@ -134,24 +135,7 @@ export default function CateringPage() {
       </section>
 
       {/* ---------- FORM ---------- */}
-      <section className="max-w-4xl mx-auto px-6 py-24">
-        <h2 className="text-3xl font-bold text-center mb-10">
-          Request Catering
-        </h2>
-
-        <form className="grid gap-6 bg-white p-10 rounded-3xl shadow-xl">
-          <input className="input" placeholder="Full Name" />
-          <input className="input" placeholder="Phone Number" />
-          <input className="input" placeholder="Event Type" />
-          <input className="input" placeholder="Number of Guests" />
-          <input className="input" placeholder="Event Date" />
-          <textarea className="input h-32" placeholder="Menu preferences / Notes" />
-
-          <button className="bg-[#d97706] hover:bg-[#b45309] text-white font-semibold py-4 rounded-full text-lg transition">
-            Request Catering
-          </button>
-        </form>
-      </section>
+     <CateringRequestForm />
 
     </main>
   );

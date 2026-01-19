@@ -14,7 +14,7 @@ const animals = [
       "Blind & paralyzed cows",
     ],
     image: "/images/cow-1.jpeg",
-    button: "Sponsor a Cow",
+    button: "know more",
     href: "/contact",
   },
   {
@@ -43,15 +43,15 @@ const animals = [
   },
 
   {
-    id: "goat",
-    title: "Goats",
+    id: "Horses",
+    title: "Horses",
     description: [
       "Accident rescues",
-      "Orphaned goats",
+      "Orphaned horse",
       "Critical medical cases",
     ],
-    image: "/images/goat-image.jpg",
-    button: "Sponsor a Goat",
+    image: "/images/horse.jpg",
+    button: "know more",
     href: "/contact",
   },
 ];

@@ -27,7 +27,6 @@ export default function AniamlAdoption() {
       </motion.div>
       <AnimalsGrid />
       <AdoptionGuidelines />
-      <AdoptionForm />
       <AdoptionCTA />
     </section>
     </section>
