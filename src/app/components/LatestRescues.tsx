@@ -8,7 +8,7 @@ export default function LatestRescues() {
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-3xl font-bold mb-8 text-[#2E7D32] text-center">
+        <h2 className="text-3xl font-bold mb-8 text-[#9cab3a] text-center">
           Latest Rescues
         </h2>
 

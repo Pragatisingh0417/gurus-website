@@ -15,7 +15,7 @@ export default function SanctuaryUpdates() {
               key={i}
               className="bg-white rounded-xl shadow p-6 text-left"
             >
-              <h4 className="font-semibold mb-2 text-[#2E7D32]">Rescue Update #{i}</h4>
+              <h4 className="font-semibold mb-2 text-[#9cab3a]">Rescue Update #{i}</h4>
               <p className="text-gray-600 text-sm">
                 A rescued animal recovering with medical care, nutrition, and love.
               </p>

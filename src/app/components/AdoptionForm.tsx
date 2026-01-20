@@ -8,7 +8,7 @@ export default function AdoptionForm() {
         
         {/* Heading */}
         <div className="text-center max-w-2xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-[#2E7D32]">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-[#9cab3a]">
             Adoption Application
           </h2>
           <p className="mt-4 text-[#3E2723]/80">

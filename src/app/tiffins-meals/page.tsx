@@ -78,7 +78,7 @@ export default function TiffinsMealsPage() {
             <li>Pays for fodder</li>
             <li>Buys medicines</li>
             <li>Supports emergency rescues</li>
-            <li>Helps raise orphaned puppies</li>
+            <li>Helps care for forgotten animals</li>
           </ul>
 
           <p className="mt-6 font-medium">

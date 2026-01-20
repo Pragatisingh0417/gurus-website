@@ -1,15 +1,26 @@
 "use client";
 
 import { useForm, ValidationError } from "@formspree/react";
+import { useState } from "react";
 
 export default function TiffinRequestForm() {
   const [state, handleSubmit] = useForm("xaqqoord");
+  const [showForm, setShowForm] = useState(true);
 
-  if (state.succeeded) {
+  if (!showForm && state.succeeded) {
     return (
-      <p className="text-center text-green-600 font-semibold">
-        Request submitted successfully 🍱
-      </p>
+      <div className="text-center space-y-4 py-20">
+        <p className="text-green-600 font-semibold text-lg">
+          Request submitted successfully 🍱
+        </p>
+
+        <button
+          onClick={() => setShowForm(true)}
+          className="bg-[#d97706] hover:bg-[#b45309] text-white font-semibold px-6 py-3 rounded-full transition"
+        >
+          Request Another Tiffin
+        </button>
+      </div>
     );
   }
 
@@ -20,7 +31,10 @@ export default function TiffinRequestForm() {
       </h2>
 
       <form
-        onSubmit={handleSubmit}
+        onSubmit={async (e) => {
+          await handleSubmit(e);
+          setShowForm(false);
+        }}
         className="grid gap-6 bg-white p-8 rounded-xl shadow-md"
       >
         <input
@@ -35,6 +49,14 @@ export default function TiffinRequestForm() {
           required
           className="input"
           placeholder="Phone Number"
+        />
+
+        {/* ✅ DATE PICKER */}
+        <input
+          type="date"
+          name="tiffin_date"
+          required
+          className="input"
         />
 
         <select name="service_type" className="input" required>

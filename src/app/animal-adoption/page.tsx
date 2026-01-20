@@ -17,7 +17,7 @@ export default function AniamlAdoption() {
         transition={{ duration: 0.8 }}
         className="max-w-3xl mx-auto px-6"
       >
-        <h1 className="text-4xl md:text-5xl font-extrabold text-[#2E7D32] mb-4">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-[#9cab3a] mb-4">
           Give Them a Home. Change a Life.
         </h1>
         <p className="text-lg text-[#3E2723]/90">

@@ -14,7 +14,7 @@ const animals = [
       "Blind & paralyzed cows",
     ],
     image: "/images/cow-1.jpeg",
-    button: "know more",
+    button: "Learn more",
     href: "/contact",
   },
   {
@@ -26,7 +26,7 @@ const animals = [
       "Orphaned puppies",
     ],
     image: "/images/309A7171.JPG",
-    button: "Sponsor a Dog",
+    button: "Learn more",
     href: "/contact",
   },
   {
@@ -38,7 +38,7 @@ const animals = [
       "Critical medical cases",
     ],
     image: "/images/kitten-2.jpg",
-    button: "Sponsor a Cat",
+    button: "Learn more",
     href: "/contact",
   },
 
@@ -51,7 +51,7 @@ const animals = [
       "Critical medical cases",
     ],
     image: "/images/horse.jpg",
-    button: "know more",
+    button: "Learn more",
     href: "/contact",
   },
 ];
@@ -68,7 +68,7 @@ export default function MeetTheAnimals() {
           transition={{ duration: 0.7 }}
           className="text-center max-w-3xl mx-auto mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-[#2E7D32] mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#9cab3a] mb-4">
             Meet the Animals Waiting for You
           </h2>
           <p className="text-lg text-[#3E2723]/90">
@@ -99,7 +99,7 @@ export default function MeetTheAnimals() {
 
               {/* Content */}
               <div className="p-8">
-                <h3 className="text-2xl font-bold text-[#2E7D32] mb-4">
+                <h3 className="text-2xl font-bold text-[#9cab3a] mb-4">
                   {animal.title}
                 </h3>
 

@@ -7,6 +7,7 @@ import {
   Phone,
   Instagram,
   Youtube,
+  Facebook,
   HeartHandshake,
 } from "lucide-react";
 import VolunteerForm from "../components/VolunteerForm";
@@ -28,7 +29,7 @@ export default function ContactPage() {
           </h1>
           <p className="text-lg opacity-90">
             Whether you want to help, visit, volunteer, or just say hello —
-            we’d love to hear from you.
+          
           </p>
         </motion.div>
       </section>
@@ -81,6 +82,9 @@ export default function ContactPage() {
             <a href="https://www.youtube.com/@growingwithgurus9700" aria-label="YouTube">
               <Youtube className="hover:text-[#db9c3d]" />
             </a>
+             <a href="https://www.facebook.com/people/GGA-for-strays/100092372754067/" aria-label="Instagram">
+              <Facebook className="hover:text-[#db9c3d]" />
+            </a>
           </div>
         </div>
       </section>
@@ -120,8 +124,8 @@ export default function ContactPage() {
           Together, We Can Save More Lives
         </h2>
         <Link
-          href="/donate"
-          className="inline-block bg-white text-[#2E7D32] px-10 py-3 rounded-full font-semibold hover:bg-[#f5f3e7] transition"
+          href="https://www.zeffy.com/en-US/donation-form/dce7d771-9492-4623-8508-d0e3096e1853" target="blank"
+          className="inline-block bg-white text-[#9cab3a] px-10 py-3 rounded-full font-semibold hover:bg-[#f5f3e7] transition"
         >
           Donate Now
         </Link>

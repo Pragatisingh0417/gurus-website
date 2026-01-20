@@ -20,7 +20,7 @@ export default function FinalCTA() {
 
         <Link
           href="/guru-newtown/virtual-adoption"
-          className="inline-block bg-white text-[#2E7D32] px-8 py-4 rounded-full font-semibold shadow-lg hover:scale-105 transition"
+          className="inline-block bg-white text-[#9cab3a] px-8 py-4 rounded-full font-semibold shadow-lg hover:scale-105 transition"
         >
           Sponsor an Animal
         </Link>

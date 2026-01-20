@@ -40,12 +40,14 @@ export default function ShopCTA() {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <button
-            disabled
-            className="px-6 py-3 rounded-full bg-gray-300 text-gray-600 font-semibold cursor-not-allowed"
+          <a
+            href="https://gurus-guardian-angel.printify.me/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-3 rounded-full bg-[#d97706] hover:bg-[#b45309] text-white font-semibold transition"
           >
-            Shop Now (Coming Soon)
-          </button>
+           Shop now 
+          </a>
 
           <a
             href="https://www.zeffy.com/en-US/donation-form/dce7d771-9492-4623-8508-d0e3096e1853"

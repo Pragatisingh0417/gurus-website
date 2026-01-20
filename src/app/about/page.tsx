@@ -35,7 +35,7 @@ export default function AboutPage() {
 
       {/* ================= FULL STORY ================= */}
       <section className="max-w-6xl mx-auto px-6 py-20 space-y-6">
-        <h2 className="text-3xl font-bold text-[#2E7D32] mb-4">
+        <h2 className="text-3xl font-bold text-[#9cab3a] mb-4">
           Our Story
         </h2>
 
@@ -76,7 +76,7 @@ export default function AboutPage() {
               key={item.title}
               className="p-8 rounded-2xl bg-[#F5F3E7] shadow-sm"
             >
-              <h3 className="text-xl font-semibold text-[#2E7D32] mb-3">
+              <h3 className="text-xl font-semibold text-[#9cab3a] mb-3">
                 {item.title}
               </h3>
               <p className="opacity-90">{item.desc}</p>
@@ -87,7 +87,7 @@ export default function AboutPage() {
 
       {/* ================= DONATIONS ================= */}
       <section className="max-w-6xl mx-auto px-6 py-20">
-        <h2 className="text-3xl font-bold text-[#2E7D32] mb-6">
+        <h2 className="text-3xl font-bold text-[#9cab3a] mb-6">
           What We Do With Your Donations
         </h2>
 
@@ -103,7 +103,7 @@ export default function AboutPage() {
       {/* ================= VISION ================= */}
       <section className="bg-[#9cab3a]/10 py-20">
         <div className="max-w-5xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold text-[#2E7D32] mb-4">
+          <h2 className="text-3xl font-bold text-[#9cab3a] mb-4">
             Our Vision & Purpose
           </h2>
           <p className="text-lg opacity-90">

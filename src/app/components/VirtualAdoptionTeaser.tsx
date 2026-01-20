@@ -36,7 +36,7 @@ export default function VirtualAdoptionTeaser() {
     hover:bg-[#a8ba33]
     hover:scale-[1.03]
     transition-all duration-300
-    focus:outline-none focus-visible:ring-4 focus-visible:ring-[#2E7D32]/40
+    focus:outline-none focus-visible:ring-4 focus-visible:ring-[#9cab3a]/40
   "
 >
   Start Virtual Adoption
@@ -53,7 +53,7 @@ function AdoptionCard({ icon, title }: any) {
       <div className="text-5xl text-[#9cab3a] mb-4 mx-auto w-fit">
         {icon}
       </div>
-      <h3 className="text-xl font-semibold mb-2 text-[#2E7D32]">{title}</h3>
+      <h3 className="text-xl font-semibold mb-2 text-[#9cab3a]">{title}</h3>
       <p className="text-gray-600">
         Monthly care including food, medical support, shelter, and love.
       </p>

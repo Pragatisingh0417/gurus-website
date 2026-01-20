@@ -30,7 +30,7 @@ export default function SponsorshipTiers() {
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-[#2E7D32]">
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-[#9cab3a]">
           Monthly Sponsorship Tiers
         </h2>
 

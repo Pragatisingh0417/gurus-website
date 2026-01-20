@@ -113,7 +113,7 @@ export default function SeniorSupportPage() {
         </div>
 
         <div className="mt-16 flex flex-col sm:flex-row justify-center gap-6">
-          <Link href="/donate">
+          <Link href="/https://www.zeffy.com/en-US/donation-form/dce7d771-9492-4623-8508-d0e3096e1853" target="blank">
             <button className="bg-[#d97706] hover:bg-[#b45309] text-white font-semibold px-10 py-4 rounded-full transition">
               Sponsor a Senior
             </button>

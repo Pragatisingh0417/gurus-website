@@ -19,7 +19,7 @@ const team = [
 export default function Team() {
   return (
     <section className="max-w-8xl mx-auto px-6 py-20">
-      <h2 className="text-3xl font-bold text-center mb-12 text-[#2E7D32]">
+      <h2 className="text-3xl font-bold text-center mb-12 text-[#9cab3a]">
         Meet the Team
       </h2>
 

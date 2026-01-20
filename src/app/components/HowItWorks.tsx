@@ -44,7 +44,7 @@ export default function HowVirtualAdoptionWorks() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-3xl md:text-4xl font-bold text-[#2E7D32] mb-4"
+          className="text-3xl md:text-4xl font-bold text-[#9cab3a] mb-4"
         >
           How Virtual Adoption Works
         </motion.h2>
@@ -84,7 +84,7 @@ export default function HowVirtualAdoptionWorks() {
           transition={{ duration: 0.5 }}
           className="bg-[#f5f3e7] border border-[#9cab3a]/30 rounded-2xl p-10 max-w-3xl mx-auto"
         >
-          <h3 className="text-2xl font-bold text-[#2E7D32] mb-6">
+          <h3 className="text-2xl font-bold text-[#9cab3a] mb-6">
             What You Receive
           </h3>
 

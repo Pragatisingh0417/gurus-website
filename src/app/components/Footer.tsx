@@ -37,10 +37,10 @@ export default function Footer() {
           </h4>
           <ul className="space-y-2 text-sm">
             <li><Link href="/about" className="hover:text-[#db9c3d]">About Us</Link></li>
-            <li><Link href="/animal-adoption" className="hover:text-[#db9c3d]">Virtual Adoption</Link></li>
-            <li><Link href="/virtual-adoption" className="hover:text-[#db9c3d]">Animal Adoption</Link></li>
-            <li><Link href="/tiffin" className="hover:text-[#db9c3d]">Tiffin & Meals</Link></li>
-            <li><Link href="/shop" className="hover:text-[#db9c3d]">Shop</Link></li>
+            <li><Link href="/virtual-adoption" className="hover:text-[#db9c3d]">Virtual Adoption</Link></li>
+            <li><Link href="/animal-adoption" className="hover:text-[#db9c3d]">Animal Adoption</Link></li>
+            <li><Link href="/tiffins-meals" className="hover:text-[#db9c3d]">Tiffin & Meals</Link></li>
+            <li><Link href="https://gurus-guardian-angel.printify.me/" target="blank" className="hover:text-[#db9c3d]">Shop</Link></li>
             <li><Link href="/contact" className="hover:text-[#db9c3d]">Contact</Link></li>
           </ul>
         </div>

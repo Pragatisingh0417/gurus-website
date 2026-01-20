@@ -146,16 +146,15 @@ export default function HeroSection() {
           <Link
             href="/shop"
             className="
-              px-7 py-3 
-              border 
+ px-7 py-3 border
               border-white 
               text-white 
               hover:bg-white 
-              hover:text-black 
+              hover:text-black
               font-semibold 
               rounded-full 
               transition
-              w-full sm:w-auto mb-3
+              w-full sm:w-auto
             "
           >
             Shop

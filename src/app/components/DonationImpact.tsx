@@ -12,9 +12,9 @@ const impacts = [
 
 export default function DonationImpact() {
   return (
-    <section className="py-20 bg-[#F5F3E7]">
+    <section className="py-20 bg-[#000000]">
       <div className="max-w-7xl mx-auto px-6 text-center">
-        <h2 className="text-3xl font-bold mb-10 text-[#2E7D32]">
+        <h2 className="text-3xl font-bold mb-10 text-[#9cab3a]">
           What Your Donations Do
         </h2>
 
